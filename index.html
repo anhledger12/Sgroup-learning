@@ -77,7 +77,102 @@
         background-color: white;
         border-radius: 100px;
         color:#e87171;
+        border: 1px solid #e87171;
+        cursor: pointer;
+    }
+    #click:hover{
+        color: white;
         border-color: #e87171;
+        background-color: #e87171;
+    }
+    .flex-container3 {
+        margin-top: 45px;
+        margin-bottom: 100px;
+        font-size: 22px;
+        width: 1000px;
+        height: 100px;
+        line-height: 33px;
+        display: flex;
+    }
+    .Skill {
+        font-size: large;
+        padding: 12.5px;
+        background: transparent;
+        border: 1px solid gray;
+        border-radius: 40px;
+        color: black;
+        margin: 10px 10px 10px 10px
+    }
+    .Skill:hover {
+        color: white;
+        border-color: #e87171;
+        background-color: #e87171;
+    }
+    .otherskills p {
+        margin-bottom: 45px;
+    }
+    .Skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-container4 {
+        margin-top: 45px;
+        margin-bottom: 100px;
+        font-size: 22px;
+        width: 1000px;
+        height: 100px;
+        line-height: 33px;
+        display: flex;
+    }
+    .flex-container5 {
+        margin-top: 45px;
+        margin-bottom: 100px;
+        font-size: 22px;
+        width: 1000px;
+        height: 100px;
+        line-height: 33px;
+        display: flex;
+    }
+    .splitleft,
+    .splitright {
+        /* margin-right: auto; */
+        flex: 1;
+        margin-right: 10px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 15.5px;
+    }
+    .company {
+        margin-top: 20px;
+        margin-bottom: 18.5px;
+        font-size: 25px;
+        color: #464646;
+    }
+    .level {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 17.5px;
+    }
+    .loremtext1 {
+        margin-top: 40px;
+        width: 400px;
+        line-height: 25px;
+        color: #767676;
+    }
+    .loremtext2 {
+        margin-top: 20px;
+        width: 400px;
+
+        line-height: 20px;
+    }
+    .li {
+        margin-bottom: 20px;
+        color: #767676;
+    }
+    li::marker {
+        font-size: 30px;
+        color: black;
     }
 </style>
 <body>
@@ -131,6 +226,104 @@
             <input type = "button" value = "Download Resume" id = "click">
         </form>
     </div>
+    <div class="flex-container3">
+        <div class="coreskill">
+          <p> <span style="border-bottom: solid #e87171"> CORE SKILL </span></p>
+          <div class="Skills">
+            <div class="Skill">
+              JavaScipts
+            </div>
+            <div class="Skill click">
+              Node.js
+            </div>
+            <div class="Skill click">
+              Express.js
+            </div>
+            <div class="Skill click">
+              MongoDB
+            </div>
+            <div class="Skill click">
+              Vue.js
+            </div>
+            <div class="Skill click">
+              React
+            </div>
+            <div class="Skill click">
+              Sequelize
+            </div>
+            <div class="Skill click">
+              Github
+            </div>
+            <div class="Skill click">
+              HTML
+            </div>
+          </div>
+        </div>
+            <div class="otherskills">
+              <p> <span style="border-bottom: solid #e87171"> OTHER SKILL </span></p>
+              <div class="Skills">
+                <div class="Skill click">
+                  Storyblok
+                </div>
+                <div class="Skill click">
+                  PWAs
+                </div>
+                <div class="Skill click">
+                  Responsive Web Design
+                </div>
+                <div class="Skill click">
+                  React
+                </div>
+                <div class="Skill click">
+                  Vuetify
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container4">
+            <div class="workexperience">
+              <p> <span   style="border-bottom: solid #e87171"> WORK EXPERIENCE </span></p>
+            </div>
+          </div>
+          <div class="flex-container5">
+            <div class="splitleft">
+              <div class="time">
+                <p>2019-present</p>
+              </div>
+              <div class="company">
+                <p>Matrix Media Inc</p>
+              </div>
+              <div class="level">
+                <p>Full Stack developer</p>
+              </div>
+              <div class="loremtext1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum</p>
+              </div>
+              <div class="loremtext2">
+                <li class="li">Lorem ipsum dolor sit amet, </li>
+                <li class="li">Lorem ipsum dolor sit amet, </li>
+              </div>
+            </div>
+            <div class="splitright">
+              <div class="time">
+                <p>2018-2019</p>
+              </div>
+              <div class="company">
+                <p>Lexind</p>
+              </div>
+              <div class="level">
+                <p>Senior app developer</p>
+              </div>
+              <div class="loremtext1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum</p>
+              </div>
+              <div class="loremtext2">
+                <li class="li">Lorem ipsum dolor sit amet,</li>
+                <li class="li">Lorem ipsum dolor sit amet,</li>
+                <li class="li">Lorem ipsum dolor sit amet,</li>
+              </div>
+            </div>
+          </div>
     </div>
 </body>
 </html>
