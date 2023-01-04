@@ -1,6 +1,243 @@
-body{
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-image: url("asset/img/download-bg");
+    color: var(--primary-color);
+  }
+header{
+    border: none;
+    padding-top: 2vw ;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(100,92,255);
+    box-shadow: none;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.background{
+    background-color:rgb(100,92,254);
+    background-image: url("https://theme-land.com/sapp/demo/assets/img/bg/download-bg.jpg");
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 0 12vw;
 }
 .navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-inner {
+    overflow: hidden;
+    display: flex;
+}
+
+.menu-inner a {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    
+}
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content  a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.small-dropdown{
+    text-transform: capitalize;
+    display: none;
+    position: absolute;
+    left: 100%;
+    margin-top: -45px;
+    background-color: #f9f9f9;
+    width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.content:hover .small-dropdown{
+    display: block;
+}
+.home{
+
+    width: 100%;
+    background: url(assets/img/welcome-bg.jpg)  no-repeat center scroll ; 
+    height: 800px;
+    z-index: 1;
+}
+.purple-block{
+    background-color: rgb(100,92,254);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.95;
+    height: 800px;
+}
+.row{
+    padding-top: 5vw ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}.align-items-center {
+    align-items: center;
+}
+.welcome-text{
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+.welcome{
+    padding: 0px 15px;
+    margin-top: 70px;
+}
+.welcome h1{
+    padding-top: 3vw;
+    font-size: 67px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.welcome p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 10px 0px;
+}
+.welcome .btn{
+    margin-top: 30px;
+    display: flex;
+    max-width: 100px;
+    justify-content: space-between;
+}
+.welcome .btn a{
+    display: block;
+    margin-left: 15px;
+    margin-right: auto
+}
+.welcome .btn a img{
+    width: 190px;
+}
+.welcome .note{
+    margin-top: 1rem;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 10px 0px;
+}
+    
+.welcome-img {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+.welcome-thumb{
+    margin-top: 70px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.welcome-thumb img{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: 100;
+    animation: myAnimation 2s ease-out 1;
+}
+@keyframes myAnimation {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+.curve{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: -98px;
+    z-index: 1;
+}
+.curve-test {
+    position: absolute;
+    margin-top: -100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve-test svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 167px;
+}
+
+.curve-test .shape-fill {
+    fill: white;
 }
